@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GameUtil">
+      <UniqueIdentifier>{d04cff1f-743f-4664-8bc2-bca6aac0a8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderingUtil">
+      <UniqueIdentifier>{e46ce28d-b8c5-400b-9306-029934507787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{d0b1f8c1-33f5-468e-9836-4e4684614131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderingUtil\Shape">
+      <UniqueIdentifier>{f9b45a80-c2c7-4350-88b7-67517460fdc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderingUtil\PBRRendering">
+      <UniqueIdentifier>{36c9ec90-cb67-44ed-90a9-0ba34b60199e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\PaintActor">
+      <UniqueIdentifier>{cb24b026-99eb-41c3-9fb6-eebff6292251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\Stage">
+      <UniqueIdentifier>{9154c7bf-bb6f-42bc-a7b7-5839a168b712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\Camera">
+      <UniqueIdentifier>{47cb64c5-be15-4828-88db-e54302aa1537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\Input">
+      <UniqueIdentifier>{fbc51a9b-22d1-4966-99fb-05ff4a643161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\PaintSystem">
+      <UniqueIdentifier>{706a3abd-ef34-4ef0-967e-18281ea6c57e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\PhysicsSystem">
+      <UniqueIdentifier>{f91d813e-88d7-41e1-bee6-779175d5e6d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow">
+      <UniqueIdentifier>{03229033-7159-4702-b690-c7766caf8a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderingUtil\OtherRenderer">
+      <UniqueIdentifier>{e3b69991-8551-496a-a802-b8ce3fa4f7cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderingUtil\Shader">
+      <UniqueIdentifier>{4f200b4e-d2a9-48a1-8335-3d3c2300aebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderingUtil\Particle">
+      <UniqueIdentifier>{b66531ab-2e10-4875-bf0a-d975f4ec2e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\PaintEnemy">
+      <UniqueIdentifier>{a0dbc865-a399-4ffd-860e-379d92bc44fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{27740c81-51f8-47ae-94c7-db12d736229b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderingUtil\Texture">
+      <UniqueIdentifier>{31344fe7-d7f1-4e9b-b704-4c5b155d56f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\Font">
+      <UniqueIdentifier>{f5a799f3-6781-401e-90a8-d2ea57a73c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\Bullet">
+      <UniqueIdentifier>{08619b5d-9833-4e72-8c4a-cff08d4cb009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\TitleMenu">
+      <UniqueIdentifier>{58314938-1da9-4bc7-ba97-868199ee3bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\Light">
+      <UniqueIdentifier>{54c0590b-1cba-491e-ab59-3ae8a41edd18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\UI">
+      <UniqueIdentifier>{801a95a1-37d5-429e-9eba-2aed00278e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\Bomb">
+      <UniqueIdentifier>{99c99559-32bd-43b1-9ff2-5a61a7eaabba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\ShaderCode">
+      <UniqueIdentifier>{7344198a-eb1f-45b8-ae48-90a4b51a98a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\ShaderCode\2DRender">
+      <UniqueIdentifier>{2d72c80b-542b-438c-abea-97a7cdf6a7cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\ShaderCode\CommonVertexShader">
+      <UniqueIdentifier>{a389a86b-b803-4680-bcd8-aaed8d19ef03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\ShaderCode\PaintSystemShader">
+      <UniqueIdentifier>{1ebf74a4-d953-445f-b27e-660a3c9e4393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\ShaderCode\ShaderForGameFactor">
+      <UniqueIdentifier>{44746805-30a1-4a64-964a-da788a507402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\ShaderCode\Skybox">
+      <UniqueIdentifier>{51c412ae-f6da-412b-a6c3-82b4fa660049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\ShaderCode\TextRender">
+      <UniqueIdentifier>{c8b13be7-e77a-43eb-a0f4-8d6ae99a413a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Setting">
+      <UniqueIdentifier>{95960de9-ea6d-441e-9b71-a9b05a7496b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\ShaderCode\3DRender">
+      <UniqueIdentifier>{1fae1fad-a87b-44d6-82e6-7d81db01d3b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\ShaderCode\CreateIBLMap">
+      <UniqueIdentifier>{85d73d14-af4a-4326-9fb8-d28eb4863d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderingUtil\PBRRendering\CreateIBLMaps">
+      <UniqueIdentifier>{6c105d98-f1ee-40c5-a3f4-97cc673fca88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameUtil\Sequence">
+      <UniqueIdentifier>{410d8ff3-b0e1-486c-8c00-18d3d3f74174}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PaintActor.cpp">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterGraphics.cpp">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterInput.cpp">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterPhysics.cpp">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintActorData.cpp">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMain.cpp">
+      <Filter>GameUtil\Sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="Gaming.cpp">
+      <Filter>GameUtil\Sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="HDRCubeMap.cpp">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClCompile>
+    <ClCompile Include="IBLRenderPack.cpp">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClCompile>
+    <ClCompile Include="IBLSubroutine.cpp">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClCompile>
+    <ClCompile Include="IrradianceMap.cpp">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClCompile>
+    <ClCompile Include="LUTTextureForIBL.cpp">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaternion.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidData.cpp">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapePrimitive.cpp">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeIndex.cpp">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="PrefilterMap.cpp">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatePrimitiveShapes.cpp">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialPBR.cpp">
+      <Filter>RenderingUtil\PBRRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturePackPBR.cpp">
+      <Filter>RenderingUtil\PBRRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="SolidShapeIndex.cpp">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="SolidShape.cpp">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>GameUtil\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="StageGraphics.cpp">
+      <Filter>GameUtil\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="StagePhysics.cpp">
+      <Filter>GameUtil\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="StageData.cpp">
+      <Filter>GameUtil\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="MathAndPhysic.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>GameUtil\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="OrthoCamera.cpp">
+      <Filter>GameUtil\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="PerspectiveCamera.cpp">
+      <Filter>GameUtil\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLights.cpp">
+      <Filter>GameUtil\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintBufferTexture.cpp">
+      <Filter>GameUtil\PaintSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintMarkTexture.cpp">
+      <Filter>GameUtil\PaintSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorCameraManager.cpp">
+      <Filter>GameUtil\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyboxRender.cpp">
+      <Filter>RenderingUtil\OtherRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureRenderer2D.cpp">
+      <Filter>RenderingUtil\OtherRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>RenderingUtil\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>RenderingUtil\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="InitShader.cpp">
+      <Filter>RenderingUtil\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle3D.cpp">
+      <Filter>RenderingUtil\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterAction.cpp">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClCompile>
+    <ClCompile Include="StagePainting.cpp">
+      <Filter>GameUtil\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="StageAttributeSetter.cpp">
+      <Filter>GameUtil\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="StageObstacle.cpp">
+      <Filter>GameUtil\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="inWave.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintColorSet.cpp">
+      <Filter>GameUtil\PaintSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Wave.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUInput.cpp">
+      <Filter>GameUtil\PaintEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="TItle.cpp">
+      <Filter>GameUtil\Sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>GameUtil\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="FontText.cpp">
+      <Filter>GameUtil\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="FontTextString.cpp">
+      <Filter>GameUtil\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="FontTextString32.cpp">
+      <Filter>GameUtil\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintBulletManager.cpp">
+      <Filter>GameUtil\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintWeapon.cpp">
+      <Filter>GameUtil\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>GameUtil\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSystem.cpp">
+      <Filter>GameUtil\TitleMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionSphere.cpp">
+      <Filter>GameUtil\PhysicsSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfomation.cpp">
+      <Filter>GameUtil\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="VSModeUI.cpp">
+      <Filter>GameUtil\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TestModeUI.cpp">
+      <Filter>GameUtil\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundSource.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundBuffer.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundFile.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBack.cpp">
+      <Filter>GameUtil\TitleMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBackAttributes.cpp">
+      <Filter>GameUtil\TitleMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorGenerator.cpp">
+      <Filter>GameUtil\TitleMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePadXInput.cpp">
+      <Filter>GameUtil\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Bomb.cpp">
+      <Filter>GameUtil\Bomb</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNode.cpp">
+      <Filter>GameUtil\PaintEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerInput.cpp">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultAnimation.cpp">
+      <Filter>GameUtil\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SubManagerFor3DAudio.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTimer.cpp">
+      <Filter>GameUtil\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicIBL.cpp">
+      <Filter>RenderingUtil\PBRRendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PaintActor.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterGraphics.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterInput.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterPhysics.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintActorState.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintActorData.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMain.h">
+      <Filter>GameUtil\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Gaming.h">
+      <Filter>GameUtil\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="HDRCubeMap.h">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClInclude>
+    <ClInclude Include="IBLRenderPack.h">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClInclude>
+    <ClInclude Include="IBLSubroutine.h">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClInclude>
+    <ClInclude Include="IrradianceMap.h">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClInclude>
+    <ClInclude Include="LUTTextureForIBL.h">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidData.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceFrame.h">
+      <Filter>GameUtil\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapePrimitive.h">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeIndex.h">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="PrefilterMap.h">
+      <Filter>RenderingUtil\PBRRendering\CreateIBLMaps</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatePrimitiveShapes.h">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialPBR.h">
+      <Filter>RenderingUtil\PBRRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="TexturePackPBR.h">
+      <Filter>RenderingUtil\PBRRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidShape.h">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidShapeIndex.h">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>GameUtil\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StageGraphics.h">
+      <Filter>GameUtil\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StagePhysics.h">
+      <Filter>GameUtil\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StageData.h">
+      <Filter>GameUtil\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="MathAndPhysic.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>GameUtil\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="OrthoCamera.h">
+      <Filter>GameUtil\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="PerspectiveCamera.h">
+      <Filter>GameUtil\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLights.h">
+      <Filter>GameUtil\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintBufferTexture.h">
+      <Filter>GameUtil\PaintSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintMarkTexture.h">
+      <Filter>GameUtil\PaintSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorCameraManager.h">
+      <Filter>GameUtil\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>MainWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="SkyboxRender.h">
+      <Filter>RenderingUtil\OtherRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureRenderer2D.h">
+      <Filter>RenderingUtil\OtherRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>RenderingUtil\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="InitShader.h">
+      <Filter>RenderingUtil\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle3D.h">
+      <Filter>RenderingUtil\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>RenderingUtil\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="CharacterAction.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="StagePainting.h">
+      <Filter>GameUtil\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StageAttributeSetter.h">
+      <Filter>GameUtil\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StageObstacle.h">
+      <Filter>GameUtil\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inWave.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintColorSet.h">
+      <Filter>GameUtil\PaintSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Wave.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUInput.h">
+      <Filter>GameUtil\PaintEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="TItle.h">
+      <Filter>GameUtil\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>GameUtil\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="FontText.h">
+      <Filter>GameUtil\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="FontTextString.h">
+      <Filter>GameUtil\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="FontTextString32.h">
+      <Filter>GameUtil\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintBullet.h">
+      <Filter>GameUtil\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintBulletManager.h">
+      <Filter>GameUtil\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>GameUtil\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSystem.h">
+      <Filter>GameUtil\TitleMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionSphere.h">
+      <Filter>GameUtil\PhysicsSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfomation.h">
+      <Filter>GameUtil\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="VSModeUI.h">
+      <Filter>GameUtil\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TestModeUI.h">
+      <Filter>GameUtil\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GamingState.h">
+      <Filter>GameUtil\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundFile.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundSource.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundBuffer.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBack.h">
+      <Filter>GameUtil\TitleMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBackAttributes.h">
+      <Filter>GameUtil\TitleMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePadXInput.h">
+      <Filter>GameUtil\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorGenerator.h">
+      <Filter>GameUtil\TitleMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintWeapon.h">
+      <Filter>GameUtil\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintActorSetting.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializeStateForGaming.h">
+      <Filter>GameUtil\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Bomb.h">
+      <Filter>GameUtil\Bomb</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNode.h">
+      <Filter>GameUtil\PaintEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>RenderingUtil\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInput.h">
+      <Filter>GameUtil\PaintActor</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultAnimation.h">
+      <Filter>GameUtil\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="SubManagerFor3DAudio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTimer.h">
+      <Filter>GameUtil\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AdditionalAttributeSetter.h">
+      <Filter>RenderingUtil\PBRRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicIBL.h">
+      <Filter>RenderingUtil\PBRRendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\common.vert">
+      <Filter>リソース ファイル\ShaderCode\CommonVertexShader</Filter>
+    </None>
+    <None Include="Shader\text.frag">
+      <Filter>リソース ファイル\ShaderCode\TextRender</Filter>
+    </None>
+    <None Include="Shader\text.vert">
+      <Filter>リソース ファイル\ShaderCode\TextRender</Filter>
+    </None>
+    <None Include="Shader\textureRenderer.frag">
+      <Filter>リソース ファイル\ShaderCode\2DRender</Filter>
+    </None>
+    <None Include="Shader\textureRenderer.vert">
+      <Filter>リソース ファイル\ShaderCode\2DRender</Filter>
+    </None>
+    <None Include="Shader\skybox.frag">
+      <Filter>リソース ファイル\ShaderCode\Skybox</Filter>
+    </None>
+    <None Include="Shader\skybox.vert">
+      <Filter>リソース ファイル\ShaderCode\Skybox</Filter>
+    </None>
+    <None Include="Shader\particle3D.vert">
+      <Filter>リソース ファイル\ShaderCode\CommonVertexShader</Filter>
+    </None>
+    <None Include="Setting\ColorSet.json">
+      <Filter>リソース ファイル\Setting</Filter>
+    </None>
+    <None Include="Setting\Weapon.json">
+      <Filter>リソース ファイル\Setting</Filter>
+    </None>
+    <None Include="Setting\GameSetting.json">
+      <Filter>リソース ファイル\Setting</Filter>
+    </None>
+    <None Include="Shader\nopaint.frag">
+      <Filter>リソース ファイル\ShaderCode\PaintSystemShader</Filter>
+    </None>
+    <None Include="Shader\nopaint.vert">
+      <Filter>リソース ファイル\ShaderCode\PaintSystemShader</Filter>
+    </None>
+    <None Include="Shader\paintInput.frag">
+      <Filter>リソース ファイル\ShaderCode\PaintSystemShader</Filter>
+    </None>
+    <None Include="Shader\paintInput.vert">
+      <Filter>リソース ファイル\ShaderCode\PaintSystemShader</Filter>
+    </None>
+    <None Include="Shader\titleback.frag">
+      <Filter>リソース ファイル\ShaderCode\ShaderForGameFactor</Filter>
+    </None>
+    <None Include="Setting\BombSetting.json">
+      <Filter>リソース ファイル\Setting</Filter>
+    </None>
+    <None Include="Shader\IBLPBR.frag">
+      <Filter>リソース ファイル\ShaderCode\3DRender</Filter>
+    </None>
+    <None Include="Shader\PBR.frag">
+      <Filter>リソース ファイル\ShaderCode\3DRender</Filter>
+    </None>
+    <None Include="Shader\StageIBL.frag">
+      <Filter>リソース ファイル\ShaderCode\3DRender</Filter>
+    </None>
+    <None Include="IBLShader\CubeMapToIrradiance.frag">
+      <Filter>リソース ファイル\ShaderCode\CreateIBLMap</Filter>
+    </None>
+    <None Include="IBLShader\CubeMapToIrradiance.vert">
+      <Filter>リソース ファイル\ShaderCode\CreateIBLMap</Filter>
+    </None>
+    <None Include="IBLShader\CubeToPrefilter.frag">
+      <Filter>リソース ファイル\ShaderCode\CreateIBLMap</Filter>
+    </None>
+    <None Include="IBLShader\CubeToPrefilter.vert">
+      <Filter>リソース ファイル\ShaderCode\CreateIBLMap</Filter>
+    </None>
+    <None Include="IBLShader\precomputingBRDF.frag">
+      <Filter>リソース ファイル\ShaderCode\CreateIBLMap</Filter>
+    </None>
+    <None Include="IBLShader\precomputingBRDF.vert">
+      <Filter>リソース ファイル\ShaderCode\CreateIBLMap</Filter>
+    </None>
+    <None Include="IBLShader\renderHDRtoCube.frag">
+      <Filter>リソース ファイル\ShaderCode\CreateIBLMap</Filter>
+    </None>
+    <None Include="IBLShader\renderHDRtoCube.vert">
+      <Filter>リソース ファイル\ShaderCode\CreateIBLMap</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PaintetGame.rc">
+      <Filter>リソース ファイル\ShaderCode\3DRender</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7f32e38c-671f-408e-8a40-392bfbf2d2e6}</ProjectGuid>
+    <RootNamespace>PaintShooting</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;libglew32d.lib;OpenAL32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)dll\*.dll" "$(OutDir)"/i/s/y</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>dllファイルのコピー</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;libglew32d.lib;OpenAL32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>NotSet</SubSystem>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)\dll\*.dll" "$(OutDir)"/i/s/y</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>dllファイルのコピー</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Audio.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ActorCameraManager.cpp" />
+    <ClCompile Include="CharacterAction.cpp" />
+    <ClCompile Include="CharacterGraphics.cpp" />
+    <ClCompile Include="CharacterInput.cpp" />
+    <ClCompile Include="CharacterPhysics.cpp" />
+    <ClCompile Include="CollisionSphere.cpp" />
+    <ClCompile Include="ColorGenerator.cpp" />
+    <ClCompile Include="CPUInput.cpp" />
+    <ClCompile Include="CreatePrimitiveShapes.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="FontText.cpp" />
+    <ClCompile Include="FontTextString.cpp" />
+    <ClCompile Include="FontTextString32.cpp" />
+    <ClCompile Include="GameInfomation.cpp" />
+    <ClCompile Include="GameMain.cpp" />
+    <ClCompile Include="GamePadXInput.cpp" />
+    <ClCompile Include="GameTimer.cpp" />
+    <ClCompile Include="Gaming.cpp" />
+    <ClCompile Include="GraphicIBL.cpp" />
+    <ClCompile Include="GraphNode.cpp" />
+    <ClCompile Include="HDRCubeMap.cpp" />
+    <ClCompile Include="IBLRenderPack.cpp" />
+    <ClCompile Include="IBLSubroutine.cpp" />
+    <ClCompile Include="InitShader.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="inWave.cpp" />
+    <ClCompile Include="IrradianceMap.cpp" />
+    <ClCompile Include="LUTTextureForIBL.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MaterialPBR.cpp" />
+    <ClCompile Include="MathAndPhysic.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="MenuSystem.cpp" />
+    <ClCompile Include="OrthoCamera.cpp" />
+    <ClCompile Include="PaintActor.cpp" />
+    <ClCompile Include="PaintActorData.cpp" />
+    <ClCompile Include="PaintBufferTexture.cpp" />
+    <ClCompile Include="PaintBulletManager.cpp" />
+    <ClCompile Include="PaintColorSet.cpp" />
+    <ClCompile Include="PaintMarkTexture.cpp" />
+    <ClCompile Include="PaintWeapon.cpp" />
+    <ClCompile Include="Particle3D.cpp" />
+    <ClCompile Include="PerspectiveCamera.cpp" />
+    <ClCompile Include="PlayerInput.cpp" />
+    <ClCompile Include="PointLights.cpp" />
+    <ClCompile Include="PrefilterMap.cpp" />
+    <ClCompile Include="Quaternion.cpp" />
+    <ClCompile Include="ResultAnimation.cpp" />
+    <ClCompile Include="RigidData.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="ShapeIndex.cpp" />
+    <ClCompile Include="ShapePrimitive.cpp" />
+    <ClCompile Include="SkyboxRender.cpp" />
+    <ClCompile Include="SolidShape.cpp" />
+    <ClCompile Include="SolidShapeIndex.cpp" />
+    <ClCompile Include="SoundBuffer.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="SoundFile.cpp" />
+    <ClCompile Include="SoundSource.cpp" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="StageAttributeSetter.cpp" />
+    <ClCompile Include="StageData.cpp" />
+    <ClCompile Include="StageGraphics.cpp" />
+    <ClCompile Include="StageObstacle.cpp" />
+    <ClCompile Include="StagePainting.cpp" />
+    <ClCompile Include="StagePhysics.cpp" />
+    <ClCompile Include="SubManagerFor3DAudio.cpp" />
+    <ClCompile Include="TestModeUI.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TexturePackPBR.cpp" />
+    <ClCompile Include="TextureRenderer2D.cpp" />
+    <ClCompile Include="TItle.cpp" />
+    <ClCompile Include="TitleBack.cpp" />
+    <ClCompile Include="TitleBackAttributes.cpp" />
+    <ClCompile Include="VSModeUI.cpp" />
+    <ClCompile Include="Wave.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdditionalAttributeSetter.h" />
+    <ClInclude Include="Audio.h" />
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ActorCameraManager.h" />
+    <ClInclude Include="CharacterAction.h" />
+    <ClInclude Include="CharacterGraphics.h" />
+    <ClInclude Include="CharacterInput.h" />
+    <ClInclude Include="CharacterPhysics.h" />
+    <ClInclude Include="CollisionSphere.h" />
+    <ClInclude Include="ColorGenerator.h" />
+    <ClInclude Include="CPUInput.h" />
+    <ClInclude Include="CreatePrimitiveShapes.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="FontText.h" />
+    <ClInclude Include="FontTextString.h" />
+    <ClInclude Include="FontTextString32.h" />
+    <ClInclude Include="GameInfomation.h" />
+    <ClInclude Include="GameMain.h" />
+    <ClInclude Include="GamePadXInput.h" />
+    <ClInclude Include="GameTimer.h" />
+    <ClInclude Include="Gaming.h" />
+    <ClInclude Include="GamingState.h" />
+    <ClInclude Include="GraphicIBL.h" />
+    <ClInclude Include="GraphNode.h" />
+    <ClInclude Include="HDRCubeMap.h" />
+    <ClInclude Include="IBLRenderPack.h" />
+    <ClInclude Include="IBLSubroutine.h" />
+    <ClInclude Include="InitializeStateForGaming.h" />
+    <ClInclude Include="InitShader.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="inWave.h" />
+    <ClInclude Include="IrradianceMap.h" />
+    <ClInclude Include="LUTTextureForIBL.h" />
+    <ClInclude Include="MaterialPBR.h" />
+    <ClInclude Include="MathAndPhysic.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MenuSystem.h" />
+    <ClInclude Include="OrthoCamera.h" />
+    <ClInclude Include="PaintActor.h" />
+    <ClInclude Include="PaintActorData.h" />
+    <ClInclude Include="PaintActorSetting.h" />
+    <ClInclude Include="PaintActorState.h" />
+    <ClInclude Include="PaintBufferTexture.h" />
+    <ClInclude Include="PaintBullet.h" />
+    <ClInclude Include="PaintBulletManager.h" />
+    <ClInclude Include="PaintColorSet.h" />
+    <ClInclude Include="PaintMarkTexture.h" />
+    <ClInclude Include="PaintWeapon.h" />
+    <ClInclude Include="Particle3D.h" />
+    <ClInclude Include="PerspectiveCamera.h" />
+    <ClInclude Include="PlayerInput.h" />
+    <ClInclude Include="PointLights.h" />
+    <ClInclude Include="PrefilterMap.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ResultAnimation.h" />
+    <ClInclude Include="RigidData.h" />
+    <ClInclude Include="SequenceFrame.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="ShapeIndex.h" />
+    <ClInclude Include="ShapePrimitive.h" />
+    <ClInclude Include="SkyboxRender.h" />
+    <ClInclude Include="SolidShape.h" />
+    <ClInclude Include="SolidShapeIndex.h" />
+    <ClInclude Include="SoundBuffer.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="SoundFile.h" />
+    <ClInclude Include="SoundSource.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="StageAttributeSetter.h" />
+    <ClInclude Include="StageData.h" />
+    <ClInclude Include="StageGraphics.h" />
+    <ClInclude Include="StageObstacle.h" />
+    <ClInclude Include="StagePainting.h" />
+    <ClInclude Include="StagePhysics.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="SubManagerFor3DAudio.h" />
+    <ClInclude Include="TestModeUI.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TexturePackPBR.h" />
+    <ClInclude Include="TextureRenderer2D.h" />
+    <ClInclude Include="TItle.h" />
+    <ClInclude Include="TitleBack.h" />
+    <ClInclude Include="TitleBackAttributes.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="VSModeUI.h" />
+    <ClInclude Include="Wave.h" />
+    <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IBLShader\CubeMapToIrradiance.frag" />
+    <None Include="IBLShader\CubeMapToIrradiance.vert" />
+    <None Include="IBLShader\CubeToPrefilter.frag" />
+    <None Include="IBLShader\CubeToPrefilter.vert" />
+    <None Include="IBLShader\precomputingBRDF.frag" />
+    <None Include="IBLShader\precomputingBRDF.vert" />
+    <None Include="IBLShader\renderHDRtoCube.frag" />
+    <None Include="IBLShader\renderHDRtoCube.vert" />
+    <None Include="Setting\BombSetting.json" />
+    <None Include="Setting\ColorSet.json" />
+    <None Include="Setting\GameSetting.json" />
+    <None Include="Setting\Weapon.json" />
+    <None Include="Shader\common.vert" />
+    <None Include="Shader\IBLPBR.frag" />
+    <None Include="Shader\nopaint.frag" />
+    <None Include="Shader\nopaint.vert" />
+    <None Include="Shader\paintInput.frag" />
+    <None Include="Shader\paintInput.vert" />
+    <None Include="Shader\particle3D.vert" />
+    <None Include="Shader\PBR.frag" />
+    <None Include="Shader\skybox.frag" />
+    <None Include="Shader\skybox.vert" />
+    <None Include="Shader\StageIBL.frag" />
+    <None Include="Shader\text.frag" />
+    <None Include="Shader\text.vert" />
+    <None Include="Shader\textureRenderer.frag" />
+    <None Include="Shader\textureRenderer.vert" />
+    <None Include="Shader\titleback.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PaintetGame.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

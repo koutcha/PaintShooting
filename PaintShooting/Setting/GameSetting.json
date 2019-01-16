@@ -1,0 +1,9 @@
+{
+  "gametime": 90.0,
+  "player": {
+    "life": 100.0,
+    "respownSecond": 5.0,
+    "velocity": 10.0,
+    "angleDelta":0.03
+  }
+}

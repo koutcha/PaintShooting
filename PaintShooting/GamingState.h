@@ -1,0 +1,17 @@
+#pragma once
+enum class GamingState
+{
+	VS_RESULT,
+	VS_GAMESET,
+	VS_PLAYING,
+	VS_PREPARE,
+	VS_MENU,
+
+	TEST_PLAYING,
+	TEST_MENU,
+
+	MOVE_TITLE,
+	MOVE_RESTART,
+
+	NONE
+};

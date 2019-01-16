@@ -1,0 +1,9 @@
+{
+  "sizeScale": 0.6,
+  "velocity": 50.0,
+  "fragmentPaintScale": 3.0,
+  "damageScale": 5.0,
+  "bombDamage": 50.0,
+  "burstFrame": 60,
+  "fragmentNum": 40
+}
